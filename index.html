@@ -1,0 +1,243 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="nav-wrapper">
+          <button class="sidebar-toggle">☰</button>
+          <img class="logo" src="Images/logo.png" alt="">
+          <div class="brand-name">
+            <h2>MadCars</h2>
+          </div>
+          <div class="logout-button">
+            <button>Logout</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="sidebar-container">
+      <div class="sidebar-wrapper">
+        <ul class="sidebarlink-wrapper">
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#cars">Cars</a></li>
+          <li><a href="#rentals">Rentals</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#settings">Settings</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <main>
+
+      <!--Dashboard Section-->
+      <section class="dashboard-section" id="dashboard">
+        <div class="container">
+          <div class="dashboard-wrapper">
+
+            <div class="card reminder">
+              <h3>Reminder🔔</h3>
+              <p><strong>Return Date:</strong> October 5, 2025 <br> Please return your rented car on or before the due date to avoid late fees.</p>
+            </div>
+
+            <div class="card current-rent">
+              <h3>Current Rental</h3>
+              <p><strong>Brand:</strong> Toyota</p>
+              <p><strong>Model:</strong> Vios</p>
+              <img class="current-rent-img" src="Images/Toyota/VIOS.png" alt="Toyota Vios">
+            </div>
+
+            <div class="card available-cars">
+              <h3>Available Cars</h3>
+              <div class="car-item">
+                <img class="car-item-img" src="Images/Toyota/CAMRY.jpg" alt="Toyota Camry">
+                <div class="car-info">
+                  <p><strong>Brand:</strong> Toyota</p>
+                  <p><strong>Model:</strong> CAMRY</p>
+                  <p><strong>Price:</strong> ₱1500/day</p>
+                </div>
+              </div>
+              <div class="car-item">
+                <img class="car-item-img" src="Images/BMW/bmw x5.jpg" alt="BMW X5">
+                <div class="car-info">
+                  <p><strong>Brand:</strong> BMW</p>
+                  <p><strong>Model:</strong> X5</p>
+                  <p><strong>Price:</strong> ₱1500/day</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Cars Section-->
+      <section class="cars-section" id="cars">
+        <div class="container">
+          <div class="cars-wrapper">
+          
+            <div class="brand-block">
+              <div class="car-name">
+                <h4>Toyota</h4>
+              </div>
+
+              <div class="car-list">
+                <div class="card car-model">
+                  <img class="car-img" src="Images/Toyota/CAMRY.jpg" alt="Toyota Camry">
+                  <h3>Camry</h3>
+                  <p>₱1500/day</p>
+                </div>
+                <div class="card car-model">
+                  <img class="car-img" src="Images/Toyota/YARIS CROSS.jpg" alt="Toyota Yaris Cross">
+                  <h3>Yaris Cross</h3>
+                  <p>₱3500/day</p>
+                </div>
+                <div class="card car-model">
+                  <img class="car-img" src="Images/Toyota/FORTUNER.webp" alt="Toyota Fortuner">
+                  <h3>Fortuner</h3>
+                  <p>₱2200/day</p>
+                </div>
+                <div class="card car-model">
+                  <img class="car-img" src="Images/Toyota/RAIZE.png" alt="Toyota Raize">
+                  <h3>Raize</h3>
+                  <p>₱2800/day</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="brand-block">
+              <div class="car-name">
+                <h4>BMW</h4>
+              </div>
+              <div class="car-list">
+                <div class="card car-model">
+                  <img class="car-img" src="Images/BMW/bmw m4.jpg" alt="BMW M4">
+                  <h3>M4</h3>
+                  <p>₱2500/day</p>
+                </div>
+                <div class="card car-model">
+                  <img class="car-img" src="Images/BMW/bmw 7 series.jpg" alt="BMW 7 Series">
+                  <h3>7 Series</h3>
+                  <p>₱1800/day</p>
+                </div>
+                <div class="card car-model">
+                  <img class="car-img" src="Images/BMW/bmw x1.jpg" alt="BMW X1">
+                  <h3>X1</h3>
+                  <p>₱3200/day</p>
+                </div>
+                <div class="card car-model">
+                  <img class="car-img" src="Images/BMW/bmw m2 coupe.jpg" alt="BMW M2 Coupe">
+                  <h3>M2 Coupe</h3>
+                  <p>₱2000/day</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Rental Section-->
+      <section class="rentals-section" id="rentals">
+        <div class="rentals-container">
+          <div class="rentals-wrapper">
+
+            <div class="rentals-header">
+              <h2>Current Rental</h2>
+            </div>
+
+            <div class="rentals-dashboard">
+
+              <div class="car-display">
+                <img src="Images/Toyota/VIOS.png" alt="Car Image">
+                <h3>Toyota Vios</h3>
+                <p>Subcompact Sedan</p>
+                <button class="rent-button">Cancel Rent</button>
+              </div>
+
+              <div class="booking-details">
+                <div class="info-card">
+                  <h4>📍 My Location</h4>
+                  <p>Novaliches, Quezon City</p>
+                </div>
+
+                <div class="info-card">
+                  <h4>📅 My Dates</h4>
+                  <p>20th of October, 10:25 AM</p>
+                </div>
+
+                <div class="info-card">
+                  <h4>💳 Payment Method</h4>
+                  <p>Credit Card •••• 7896</p>
+                </div>
+
+                <div class="info-card">
+                  <h4>🤖 Assistant</h4>
+                  <p>Arrange rental time, request analysis, or manage insurance.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Profile Section-->
+      <section class="profile-section" id="profile">
+        <div class="container">
+          <div class="profile-wrapper">
+
+    
+            <div class="profile-card">
+              <h3>Personal Information</h3>
+              <input type="text" placeholder="Full Name">
+              <input type="text" placeholder="Username">
+              <input type="email" placeholder="Email">
+              <input type="text" placeholder="Phone Number">
+              <textarea placeholder="Address"></textarea>
+            </div>
+
+            <div class="profile-card">
+              <h3>Account Details</h3>
+              <input type="text" placeholder="Membership Level: Silver" readonly>
+              <input type="text" placeholder="Driver’s License Number">
+              <input type="text" placeholder="Last Rental Date: 09/25/25" readonly>
+              <input type="text" placeholder="Payment Method">
+              <input type="text" placeholder="Loyalty Points / Discounts" readonly>
+            </div>
+
+             <button class="save-btn">Save Changes</button>
+         </div>
+        </div>
+      </section>
+
+      <!--Settings Section-->
+      <section class="settings-section" id="settings">
+        <div class="container">
+          <div class="settings-wrapper">
+            <ul class="settings-list">
+              <li><a href="#">🔒 Change Password</a></li>
+              <li><a href="#">⚙️ Preferences</a></li>
+              <li><a href="#">🔔 Notifications</a></li>
+              <li><a href="#">📜 Terms & Privacy</a></li>
+              <li><a href="#">❓ Help & Support</a></li>
+              <li><a href="#">💬 Feedback</a></li>
+              <li><a href="#">🚪 Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <script src="js/dashboard.js"></script>
+
+  </body>
+  </html>
